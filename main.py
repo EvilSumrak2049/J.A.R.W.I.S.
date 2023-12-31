@@ -3,7 +3,7 @@ import streamlit as st
 
 genai.configure(api_key='AIzaSyB8x5oCVBSRZiuNxAUgodiNxdPRYUhEwY8')
 
-model = genai.GenerateModel('gemini-pro')
+model = genai.GenerativeModel('gemini-pro')
 chat = model.start_chat(history = [])
 
 def get_response(question):
